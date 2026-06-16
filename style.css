@@ -171,13 +171,70 @@ header {
 }
 
 .hero-vines img {
-  width: 100%;
+  display: none;
+}
+
+.hero-vines::before,
+.hero-vines::after {
+  content: '';
+  position: absolute;
+  top: 0;
   height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  display: block;
+  width: 40%;
+  background-image: url('background_Vines.png');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
   mix-blend-mode: multiply;
   opacity: 0.92;
+}
+
+.hero-vines::before {
+  left: 0;
+  background-position: left center;
+}
+
+.hero-vines::after {
+  right: 0;
+  background-position: right center;
+}
+
+.hero-footer {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero-footer-text {
+  font-family: var(--font-label);
+  font-size: 0.62rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.hero-footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.4rem;
+  pointer-events: all;
+}
+
+.hero-footer-social a {
+  font-family: var(--font-label);
+  font-size: 0.58rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+.hero-footer-social a:hover {
+  color: var(--accent);
 }
 
 /* Thin red needle dripping from top */
@@ -332,12 +389,12 @@ header {
 }
 
 .section-title {
-  font-family: var(--font-display);
-  font-size: clamp(1.3rem, 4vw, 1.9rem);
-  font-weight: 700;
+  font-family: var(--font-head);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 400;
   text-align: center;
-  letter-spacing: 5px;
-  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-transform: none;
   margin-bottom: 0.5rem;
   position: relative;
 }
@@ -1169,6 +1226,10 @@ header {
 @media (max-width: 768px) {
   .logo {
     font-size: 1.9rem;
+  }
+
+  .hero-vines {
+    display: none;
   }
 
   .hamburger {
