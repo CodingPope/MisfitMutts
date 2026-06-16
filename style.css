@@ -37,6 +37,7 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.65;
+  overflow-x: hidden;
 }
 
 a {
@@ -152,7 +153,7 @@ header {
 .hero {
   background: #000;
   color: var(--text);
-  min-height: 92vh;
+  height: calc(100vh - 64px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -719,6 +720,43 @@ header {
   line-height: 1.8;
 }
 
+.about-social {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.about-social-btn {
+  font-family: var(--font-label);
+  font-size: 0.68rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 0.55rem 1.4rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  transition: all 0.2s;
+}
+
+.about-social-btn:hover {
+  color: var(--text);
+  border-color: rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.04);
+}
+
+.about-social-btn--fb:hover {
+  border-color: #1877f2;
+  color: #1877f2;
+  background: rgba(24,119,242,0.06);
+}
+
+.about-social-btn--ig:hover {
+  border-color: #e1306c;
+  color: #e1306c;
+  background: rgba(225,48,108,0.06);
+}
+
 /* ============================
    SPECIALS
 ============================ */
@@ -1073,6 +1111,32 @@ header {
 .footer a {
   color: var(--accent);
 }
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.footer-social-link {
+  color: var(--text-muted);
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.footer-social-link:hover {
+  color: var(--accent);
+}
+
+.footer-social-divider {
+  color: var(--border);
+  font-size: 0.9rem;
+}
+
 .footer-small {
   margin-top: 0.5rem;
   font-size: 0.65rem;
@@ -1084,6 +1148,10 @@ header {
    MOBILE RESPONSIVE
 ============================ */
 @media (max-width: 768px) {
+  .logo {
+    font-size: 1.9rem;
+  }
+
   .hamburger {
     display: flex;
   }
@@ -1189,6 +1257,10 @@ header {
 
   .about-text {
     text-align: center;
+  }
+
+  .about-social {
+    justify-content: center;
   }
 
   .about-darla {

@@ -57,6 +57,7 @@ document.addEventListener('click', (e) => {
   if (!link) return;
   e.preventDefault();
   switchPage(link.dataset.page);
+  window.scrollTo(0, 0);
 });
 
 // ── Service Tabs (within pricing page) ─────────
