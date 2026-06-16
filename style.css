@@ -619,6 +619,15 @@ header {
   line-height: 1.75;
 }
 
+.walkin-warning {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0.75rem 0 0.5rem;
+}
+
 .spa-price {
   margin-top: 0.85rem;
   font-family: var(--font-head) !important;
@@ -1222,11 +1231,30 @@ header {
     grid-template-columns: 1fr;
   }
 
+  .extras-grid--walkins {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: unset;
+    justify-content: unset;
+  }
+
+  .extras-grid--walkins > .extra-card {
+    flex: unset;
+  }
+
   .contact-cards {
     grid-template-columns: 1fr;
   }
 
   .hours-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hours-grid > .hours-day:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .hours-block {
+    overflow-x: auto;
   }
 }

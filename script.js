@@ -1,7 +1,6 @@
 // ── Custom Cursor ──────────────────────────────
 (function () {
   const SIZE = 26;
-  const HS = Math.round(SIZE / 2);
   const img = new Image();
   img.onload = function () {
     const canvas = document.createElement('canvas');
@@ -9,8 +8,8 @@
     canvas.height = SIZE;
     canvas.getContext('2d').drawImage(img, 0, 0, SIZE, SIZE);
     const url = canvas.toDataURL();
-    const def = `url("${url}") ${HS} ${HS}, auto`;
-    const ptr = `url("${url}") ${HS} ${HS}, pointer`;
+    const def = `url("${url}") 0 0, auto`;
+    const ptr = `url("${url}") 0 0, pointer`;
     document.documentElement.style.cursor = def;
     const s = document.createElement('style');
     s.textContent = `a,button,[data-page],.tab-btn,.btn,.contact-card,.price-card,.extra-card,.special-card,.gallery-item,.hamburger{cursor:${ptr}!important}`;
