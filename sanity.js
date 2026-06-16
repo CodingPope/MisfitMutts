@@ -7,7 +7,14 @@ function sanityUrl(query) {
 }
 
 function imageUrl(ref) {
-  const [, id, dimensions, ext] = ref.split('-')
+  // ref format: image-{id}-{WxH}-{ext}
+  const withoutPrefix = ref.replace(/^image-/, '')
+  const extMatch = withoutPrefix.match(/-(\w+)$/)
+  const dimMatch = withoutPrefix.match(/-(\d+x\d+)-\w+$/)
+  if (!extMatch || !dimMatch) return ''
+  const ext = extMatch[1]
+  const dimensions = dimMatch[1]
+  const id = withoutPrefix.replace(`-${dimensions}-${ext}`, '')
   return `https://cdn.sanity.io/images/${PROJECT_ID}/${DATASET}/${id}-${dimensions}.${ext}`
 }
 
