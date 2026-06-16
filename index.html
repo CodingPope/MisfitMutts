@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Misfit Mutts LLC | Dog Grooming</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Cinzel:wght@400;700&family=Oswald:wght@300;400;500&family=Barlow:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAV -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="logo" data-page="home">Misfit Mutts</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#" data-page="home" class="current">Home</a></li>
+          <li><a href="#" data-page="about">About</a></li>
+          <li><a href="#" data-page="specials">Specials</a></li>
+          <li><a href="#" data-page="services">Services</a></li>
+          <li><a href="#" data-page="gallery">Gallery</a></li>
+          <li><a href="#" data-page="contact" class="nav-cta">Book Now</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero page active">
+      <div class="hero-content">
+        <div class="hero-logo-text">
+          <img
+            src="IMG_3168.jpeg"
+            alt="Misfit Mutts LLC Dog Grooming"
+            class="hero-logo-img"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'block';
+            "
+          />
+          <div class="hero-logo-fallback">
+            <h1 class="hero-title">Misfit Mutts</h1>
+            <p class="hero-tagline">
+              Dog Grooming &nbsp;&middot;&nbsp; Brighton, CO
+            </p>
+          </div>
+        </div>
+        <div class="hero-btns">
+          <a href="#" class="btn btn-primary" data-page="contact"
+            >Book an Appointment</a
+          >
+          <a href="#" class="btn btn-outline" data-page="services"
+            >See Pricing</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES / PRICING -->
+    <section id="services" class="section page">
+      <div class="container">
+        <h2 class="section-title">Services & Pricing</h2>
+        <p class="section-sub">
+          All grooms include: Bath · Blow Dry · Nail Trim & Filing · Ear
+          Cleaning · Brushing
+        </p>
+
+        <div class="services-promos">
+          <div class="promo-pill">Save <strong>$5</strong> with pre-booking</div>
+          <div class="promo-pill promo-pill--accent">Mention the website &amp; save <strong>$10</strong> on your visit</div>
+        </div>
+
+        <!-- TABS -->
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="fullgroom">
+            Full Groom
+          </button>
+          <button class="tab-btn" data-tab="brush">Bath &amp; Brush</button>
+          <button class="tab-btn" data-tab="fff">Face, Feet &amp; Fanny</button>
+          <button class="tab-btn" data-tab="addons">Add-Ons</button>
+        </div>
+
+        <!-- FULL GROOM -->
+        <div class="tab-content active" id="fullgroom">
+          <div class="service-layout">
+            <div class="price-grid">
+              <div class="price-card">
+                <div class="size-label">Small</div>
+                <div class="price-main">$80</div>
+              </div>
+              <div class="price-card">
+                <div class="size-label">Medium</div>
+                <div class="price-main">$90</div>
+              </div>
+              <div class="price-card">
+                <div class="size-label">Large</div>
+                <div class="price-main">$110</div>
+              </div>
+              <div class="price-card">
+                <div class="size-label">XL</div>
+                <div class="price-main">$165</div>
+              </div>
+              <div class="price-card">
+                <div class="size-label">Extra Large</div>
+                <div class="price-main">$135</div>
+              </div>
+              <div class="price-card">
+                <div class="size-label">Medium Doodle</div>
+                <div class="price-main">$110</div>
+              </div>
+              <div class="price-card">
+                <div class="size-label">Large Doodle</div>
+                <div class="price-main">$125</div>
+              </div>
+            </div>
+            <div class="service-info">
+              <h3 class="service-info-title">What's Included</h3>
+              <p>
+                Every full groom includes a relaxing bath, thorough brush-out,
+                customized haircut, ear cleaning (ear plucking available upon
+                request), teeth brushing, nail trimming, and nail filing
+                whenever your pup is comfortable with the process.
+              </p>
+              <p>
+                I use only high-quality shampoos and conditioners with every
+                grooming service, and you're welcome to choose the shampoo that
+                best suits your dog's needs at no additional cost.
+              </p>
+              <p>
+                De-shedding treatments are included with all grooms at no extra
+                charge unless the coat is severely compacted and requires
+                extensive additional work.
+              </p>
+              <p>
+                To complete the spa experience, every groom also includes a
+                premium facial treatment designed to gently cleanse and refresh
+                your dog's face.
+              </p>
+            </div>
+          </div>
+          <div class="pricing-note">
+            <p>
+              Note — For larger double-coated breeds receiving any trimming or
+              haircut, the deshed price is automatically applied. It helps with
+              the entire grooming process.
+            </p>
+          </div>
+        </div>
+
+        <!-- BATH & BRUSH -->
+        <div class="tab-content" id="brush">
+          <div class="service-layout">
+            <div class="price-grid">
+              <div class="price-card">
+                <div class="size-label">Small</div>
+                <div class="price-main">$55</div>
+              </div>
+              <div class="price-card">
+                <div class="size-label">Medium</div>
+                <div class="price-main">$75</div>
+              </div>
+              <div class="price-card">
+                <div class="size-label">Large</div>
+                <div class="price-main">$90</div>
+              </div>
+              <div class="price-card">
+                <div class="size-label">XL</div>
+                <div class="price-main">$125</div>
+              </div>
+            </div>
+            <div class="service-info">
+              <h3 class="service-info-title">What's Included</h3>
+              <p>
+                Every bath service includes a relaxing bath, thorough brush-out,
+                ear cleaning (ear plucking available upon request), teeth
+                brushing, nail trimming, and nail filing whenever your pup is
+                comfortable with the process.
+              </p>
+              <p>
+                I use only high-quality shampoos and conditioners with every
+                service, and you're welcome to choose the shampoo that best
+                suits your dog's needs at no additional cost.
+              </p>
+              <p>
+                De-shedding treatments are included with all bath services at no
+                extra charge unless the coat is severely compacted and requires
+                extensive additional work.
+              </p>
+              <p>
+                To complete the spa experience, every bath service also includes
+                a premium facial treatment designed to gently cleanse and
+                refresh your dog's face.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FACE, FEET & FANNY -->
+        <div class="tab-content" id="fff">
+          <div class="service-layout">
+            <div class="price-grid">
+              <div class="price-card">
+                <div class="size-label">Small</div>
+                <div class="price-main">$65</div>
+              </div>
+              <div class="price-card">
+                <div class="size-label">Medium</div>
+                <div class="price-main">$70</div>
+              </div>
+              <div class="price-card">
+                <div class="size-label">Large</div>
+                <div class="price-main">$90</div>
+              </div>
+              <div class="price-card">
+                <div class="size-label">Doodle</div>
+                <div class="price-main">$95</div>
+              </div>
+            </div>
+            <div class="service-info">
+              <h3 class="service-info-title">What's Included</h3>
+              <p>
+                This service includes a relaxing bath, thorough brush-out, face
+                trim, sanitary trim, and feet trim to help keep your pup looking
+                neat and comfortable between full grooming appointments.
+              </p>
+              <p>
+                Also included are ear cleaning, teeth brushing, nail trimming,
+                and nail filing whenever your pup is comfortable with the
+                process.
+              </p>
+              <p>
+                I use only high-quality shampoos and conditioners with every
+                service, and you're welcome to choose the shampoo that best
+                suits your dog's needs at no additional cost.
+              </p>
+              <p>
+                De-shedding treatments are included with all services at no
+                extra charge unless the coat is severely compacted and requires
+                extensive additional work.
+              </p>
+              <p>
+                To complete the spa experience, every service also includes a
+                premium facial treatment designed to gently cleanse and refresh
+                your dog's face.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ADD-ONS -->
+        <div class="tab-content" id="addons">
+          <div class="addons-section-label">Optional Add-Ons</div>
+          <div class="extras-grid">
+            <div class="extra-card">
+              <h3>Hair Dye</h3>
+              <p>Starting at <strong>$25</strong></p>
+            </div>
+            <div class="extra-card">
+              <h3>Nail Polish</h3>
+              <p><strong>$14</strong></p>
+            </div>
+          </div>
+
+          <div class="addons-section-label" style="margin-top: 1px">
+            Walk-In Services
+          </div>
+          <div class="extras-grid extras-grid--walkins">
+            <div class="extra-card">
+              <h3>Nail Trim</h3>
+              <p><strong>$10</strong></p>
+            </div>
+            <div class="extra-card">
+              <h3>Nail Trim &amp; Ear Cleaning</h3>
+              <p><strong>$15</strong></p>
+            </div>
+            <div class="extra-card">
+              <h3>Sanitary Clean Up</h3>
+              <p><strong>$25</strong></p>
+            </div>
+            <div class="extra-card">
+              <h3>Gland Expression</h3>
+              <p><strong>$12</strong></p>
+            </div>
+            <div class="extra-card">
+              <h3>Nail Trim, Ears &amp; Glands</h3>
+              <p><strong>$18</strong></p>
+            </div>
+            <div class="extra-card">
+              <h3>Sani, Nails, Ears &amp; Glands</h3>
+              <p><strong>$30</strong></p>
+            </div>
+            <div class="extra-card">
+              <h3>Dematt</h3>
+              <p><strong>$20</strong></p>
+            </div>
+          </div>
+
+          <div class="addons-note">
+            Outside of walk-in appointments, I do not offer additional service
+            add-ons, as my existing services are designed to be comprehensive
+            and already include most of these features. Hair dye and nail polish
+            are the only services available as optional add-ons.
+          </div>
+        </div>
+
+        <p class="fees-note">
+          * Additional fees may apply for behavior, matting, or no call/no
+          shows.
+        </p>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section section-dark page">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-sub">Some of our favorite transformations.</p>
+        <div class="gallery-grid">
+          <div class="gallery-placeholder"><span>Coming Soon</span></div>
+          <div class="gallery-placeholder"><span>Coming Soon</span></div>
+          <div class="gallery-placeholder"><span>Coming Soon</span></div>
+          <div class="gallery-placeholder"><span>Coming Soon</span></div>
+          <div class="gallery-placeholder"><span>Coming Soon</span></div>
+          <div class="gallery-placeholder"><span>Coming Soon</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="section page">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-layout">
+          <div class="about-photo">
+            <img
+              src="Morgann _About Me.PNG"
+              alt="Morgann — Misfit Mutts Groomer"
+              class="about-img"
+            />
+          </div>
+          <div class="about-text">
+            <h3>Hi, I’m Morgann!</h3>
+            <p>
+              Hello, I’m Morgann! I am a Colorado native, and spent most of my
+              life in the Brighton area. I’ve been a professional dog groomer
+              for over 11 years, and I’m passionate about helping dogs look
+              their best, feel their best, and enjoy a positive grooming
+              experience. My top priority is making sure every pup is
+              comfortable, safe, and treated with patience and care.
+            </p>
+            <p>
+              I love working with all breeds and personalities, but I have a
+              special soft spot for the big dogs! Whether your pup is big or
+              small, fluffy or short-haired, sweet or a little spicy, they’re
+              welcome in my salon.
+            </p>
+            <p>
+              My goal is to provide quality grooming in a calm, caring
+              environment where both pets and their owners feel confident and
+              comfortable. I look forward to meeting you and your four-legged
+              family member soon!
+            </p>
+          </div>
+        </div>
+
+        <!-- KYLEE -->
+        <div class="about-darla">
+          <div class="darla-text">
+            <h3>Meet Kylee</h3>
+            <p>
+              Meet Kylee, my first dog and a very special part of my life. I
+              welcomed her into my life when she was just four months old, and
+              she is now 14 years old. Over the years, she has been a constant
+              source of love, companionship, and joy. Kylee's intelligence,
+              gentle nature, and unwavering loyalty have made her truly one of a
+              kind, and she continues to inspire my deep appreciation for the
+              bond between people and their pets. She has been a life saver to
+              say the least.
+            </p>
+          </div>
+          <div class="darla-photos">
+            <img src="kylee-adult.png" alt="Kylee" />
+            <img src="kylee-puppy-1.jpeg" alt="Kylee as a puppy" />
+          </div>
+        </div>
+
+        <!-- DARLA -->
+        <div class="about-darla">
+          <div class="darla-text">
+            <h3>Meet Darla</h3>
+            <p>
+              Meet Darla, the newest addition to my family and a dog who brings
+              endless energy, adventure, and joy into our lives. I brought her
+              home when she was just eight weeks old, and she quickly became
+              everything I had hoped for in a dog. As a groomer, owning a dog
+              like Darla had always been a dream of mine, not only because of
+              her wonderful personality, but also because she gives me the
+              opportunity to explore my creativity and continue growing my
+              grooming skills. Her playful spirit, enthusiasm for life, and
+              willingness to try new things make every day an adventure. Darla
+              is deeply loved and has become a cherished part of our family.
+            </p>
+          </div>
+          <div class="darla-photos">
+            <img
+              src="darla-adult.JPEG"
+              alt="Darla"
+              style="object-position: center center"
+            />
+            <img src="darla-puppy-1.png" alt="Darla as a puppy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEASONAL SPECIALS -->
+    <section id="specials" class="section section-dark page">
+      <div class="container">
+        <h2 class="section-title">Seasonal Specials</h2>
+        <p class="section-sub">
+          Limited-time offerings — check back each season for new deals.
+        </p>
+        <div class="specials-empty">
+          <p class="specials-empty-title">No Active Specials</p>
+          <p>There are no seasonal specials running at this time. Check back soon — new offerings are added throughout the year.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section page">
+      <div class="container contact-container">
+        <h2 class="section-title">Book an Appointment</h2>
+        <p class="section-sub">
+          Have a question? We'd love to hear from you. Please note that bookings
+          are not accepted via phone or email — use the contact details below
+          for general inquiries only.
+        </p>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <span class="contact-icon">📞</span>
+            <div>
+              <p class="contact-label">Phone</p>
+              <p class="contact-value">(720) 984-9573</p>
+              <p class="contact-note">General inquiries only</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <p class="contact-label">Email</p>
+              <p class="contact-value">Misfitmuttsllc@gmail.com</p>
+              <p class="contact-note">General inquiries only</p>
+            </div>
+          </div>
+
+          <a
+            href="https://maps.google.com/?q=210+S+Main+St+Brighton+CO+80601"
+            target="_blank"
+            class="contact-card"
+          >
+            <span class="contact-icon">📍</span>
+            <div>
+              <p class="contact-label">Location</p>
+              <p class="contact-value">
+                210 S. Main St<br />Brighton, CO 80601
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="hours-block">
+          <p class="hours-block-title">Booking Hours</p>
+          <div class="hours-grid">
+            <div class="hours-day">
+              <div class="hours-day-name">Monday</div>
+              <div class="hours-day-time">9am – 2pm</div>
+            </div>
+            <div class="hours-day">
+              <div class="hours-day-name">Tuesday</div>
+              <div class="hours-day-time closed">Closed</div>
+            </div>
+            <div class="hours-day">
+              <div class="hours-day-name">Wednesday</div>
+              <div class="hours-day-time">9am – 2pm</div>
+            </div>
+            <div class="hours-day">
+              <div class="hours-day-name">Thursday</div>
+              <div class="hours-day-time">9am – 2pm</div>
+            </div>
+            <div class="hours-day">
+              <div class="hours-day-name">Friday</div>
+              <div class="hours-day-time closed">Closed</div>
+            </div>
+            <div class="hours-day">
+              <div class="hours-day-name">Saturday</div>
+              <div class="hours-day-time">9am – 2pm</div>
+            </div>
+            <div class="hours-day">
+              <div class="hours-day-name">Sunday</div>
+              <div class="hours-day-time">9am – 2pm</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>Misfit Mutts LLC &nbsp;&mdash;&nbsp; Brighton, CO</p>
+      <p class="footer-small">© 2026 Misfit Mutts LLC. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
