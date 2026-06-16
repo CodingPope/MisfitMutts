@@ -181,7 +181,6 @@ header {
   top: 0;
   height: 100%;
   width: 40%;
-  background-image: url('background_Vines.png');
   background-size: auto 100%;
   background-repeat: no-repeat;
   mix-blend-mode: multiply;
@@ -190,11 +189,13 @@ header {
 
 .hero-vines::before {
   left: 0;
+  background-image: url('vine_frame_left_side.png');
   background-position: left center;
 }
 
 .hero-vines::after {
   right: 0;
+  background-image: url('vine_frame_right_side.png');
   background-position: right center;
 }
 
