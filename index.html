@@ -350,7 +350,7 @@
       <div class="container">
         <h2 class="section-title">Gallery</h2>
         <p class="section-sub">Some of our favorite transformations.</p>
-        <div class="gallery-grid">
+        <div class="gallery-grid" id="gallery-grid">
           <div class="gallery-placeholder"><span>Coming Soon</span></div>
           <div class="gallery-placeholder"><span>Coming Soon</span></div>
           <div class="gallery-placeholder"><span>Coming Soon</span></div>
@@ -470,12 +470,14 @@
         <p class="section-sub">
           Limited-time offerings — check back each season for new deals.
         </p>
-        <div class="specials-empty">
-          <p class="specials-empty-title">No Active Specials</p>
-          <p>
-            There are no seasonal specials running at this time. Check back soon
-            — new offerings are added throughout the year.
-          </p>
+        <div id="specials-container">
+          <div class="specials-empty">
+            <p class="specials-empty-title">No Active Specials</p>
+            <p>
+              There are no seasonal specials running at this time. Check back soon
+              — new offerings are added throughout the year.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -588,6 +590,7 @@
       <p class="footer-small">© 2026 Misfit Mutts LLC. All rights reserved.</p>
     </footer>
 
+    <script src="sanity.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
