@@ -158,9 +158,26 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 3rem 1.5rem 5rem;
+  padding: 1.5rem 1.5rem 2rem;
   position: relative;
   overflow: hidden;
+}
+
+.hero-vines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-vines img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  mix-blend-mode: multiply;
+  opacity: 0.92;
 }
 
 /* Thin red needle dripping from top */
@@ -183,7 +200,7 @@ header {
 }
 
 .hero-logo-text {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .hero-logo-fallback {
@@ -215,7 +232,9 @@ header {
 .hero-logo-img {
   width: 100%;
   max-width: 900px;
+  max-height: calc(100vh - 240px);
   height: auto;
+  object-fit: contain;
   display: block;
   margin: 0 auto;
 }
@@ -741,20 +760,20 @@ header {
 
 .about-social-btn:hover {
   color: var(--text);
-  border-color: rgba(255,255,255,0.25);
-  background: rgba(255,255,255,0.04);
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .about-social-btn--fb:hover {
   border-color: #1877f2;
   color: #1877f2;
-  background: rgba(24,119,242,0.06);
+  background: rgba(24, 119, 242, 0.06);
 }
 
 .about-social-btn--ig:hover {
   border-color: #e1306c;
   color: #e1306c;
-  background: rgba(225,48,108,0.06);
+  background: rgba(225, 48, 108, 0.06);
 }
 
 /* ============================

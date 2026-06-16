@@ -33,6 +33,8 @@ function closeMenu() {
 }
 
 // ── Page Navigation ────────────────────────────
+const siteFooter = document.getElementById('siteFooter');
+
 function switchPage(pageId) {
   // Hide all pages
   document
@@ -43,6 +45,9 @@ function switchPage(pageId) {
   const target = document.getElementById(pageId);
   if (target) target.classList.add('active');
 
+  // Hide footer on home page
+  siteFooter.style.display = pageId === 'home' ? 'none' : '';
+
   // Update nav active state
   document.querySelectorAll('.nav-links a[data-page]').forEach((a) => {
     a.classList.toggle('current', a.dataset.page === pageId);
@@ -50,6 +55,9 @@ function switchPage(pageId) {
 
   closeMenu();
 }
+
+// Hide footer on initial load (home is active by default)
+siteFooter.style.display = 'none';
 
 // Delegate all [data-page] clicks
 document.addEventListener('click', (e) => {
