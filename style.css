@@ -1302,6 +1302,7 @@ header {
     justify-content: center;
     width: 100%;
     gap: 0;
+    margin-top: -3rem;
   }
   .hero-logo-img {
     max-height: calc(100vh - 220px);
@@ -1319,7 +1320,7 @@ header {
     font-size: 0.68rem;
   }
   .hero-footer {
-    bottom: 0.5rem;
+    bottom: 1.5rem;
   }
 
   .tabs {
