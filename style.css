@@ -1236,7 +1236,14 @@ header {
   }
 
   .hero-vines {
-    display: none;
+    display: block;
+  }
+  .hero-vines::before,
+  .hero-vines::after {
+    width: 28%;
+    opacity: 0.6;
+    background-size: auto 85%;
+    background-position-y: center;
   }
 
   .hamburger {
