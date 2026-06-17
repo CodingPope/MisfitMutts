@@ -6,7 +6,7 @@ function sanityUrl(query) {
   return `https://${PROJECT_ID}.api.sanity.io/v${API_VERSION}/data/query/${DATASET}?query=${encodeURIComponent(query)}`
 }
 
-function imageUrl(ref) {
+function imageUrl(ref, width = 800) {
   // ref format: image-{id}-{WxH}-{ext}
   const withoutPrefix = ref.replace(/^image-/, '')
   const extMatch = withoutPrefix.match(/-(\w+)$/)
@@ -15,7 +15,7 @@ function imageUrl(ref) {
   const ext = extMatch[1]
   const dimensions = dimMatch[1]
   const id = withoutPrefix.replace(`-${dimensions}-${ext}`, '')
-  return `https://cdn.sanity.io/images/${PROJECT_ID}/${DATASET}/${id}-${dimensions}.${ext}`
+  return `https://cdn.sanity.io/images/${PROJECT_ID}/${DATASET}/${id}-${dimensions}.${ext}?w=${width}&auto=format&q=80`
 }
 
 async function loadGallery() {
