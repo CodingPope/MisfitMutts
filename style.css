@@ -183,7 +183,6 @@ header {
   background-size: auto 100%;
   background-repeat: no-repeat;
   mix-blend-mode: multiply;
-  opacity: 0.92;
 }
 
 .hero-vines::before {
