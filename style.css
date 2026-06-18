@@ -1238,18 +1238,27 @@ header {
     display: block;
   }
   .hero-vines::before {
-    display: none;
-  }
-  .hero-vines::after {
-    background-image: url('vine_mobile_right_transparent.png');
+    display: block;
+    background-image: url('vine_mobile_right.png');
     width: 100%;
     height: 100%;
     top: 0;
     right: 0;
     left: auto;
-    opacity: 0.5;
-    background-size: 100% 100%;
+    background-size: auto 100%;
     background-position: right top;
+    background-repeat: no-repeat;
+  }
+  .hero-vines::after {
+    background-image: url('vine_mobile_left.png');
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: auto;
+    background-size: auto 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
   }
 
   .hamburger {
